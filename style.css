@@ -1,0 +1,147 @@
+/* ===== ROOT COLORS ===== */
+:root {
+    --primary: #0f172a;
+    --accent: #bfa046;
+    --light: #f8fafc;
+    --grey: #64748b;
+    --white: #ffffff;
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--primary);
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 85%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 70px 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 10px;
+    color: #e2e8f0;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #a8892f;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+/* ===== EDUCATION & JOB BLOCKS ===== */
+.job, .edu {
+    margin-bottom: 35px;
+}
+
+.job h3, .edu h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: var(--grey);
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* ===== SKILLS GRID ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.skills-grid div {
+    background: var(--white);
+    padding: 12px;
+    border-left: 4px solid var(--accent);
+    font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
